@@ -6,4 +6,3 @@ Readme
 3. Installation
 4. Configuration
 5. Contributions
-6. lo cambio
