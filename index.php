@@ -32,7 +32,7 @@
 		<h1>ULTIMOS MANGAS A&Ntilde;ADIDOS</h1>
 		<div class="zone">
 			<?php for($i=0;$i<6;$i++) :?>
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<img class="manga" src="Mangas/test.png"></img>
 				<img class="separacion "src="img/separador2.png"></img>
 			</div>
