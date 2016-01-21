@@ -4,6 +4,15 @@
 *				-> Alex Serret Aranda
 *	18/01/2016
 */
+#footer{
+    bottom: 0;
+    position: absolute;
+    width: 97.6%;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
 body, html{
 	background-color: #79AA37;
 	height: 100%;
