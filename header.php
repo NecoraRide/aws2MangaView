@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/carrousel.css" />
 	</head>
 	<body>
 	<!-- Menu -->
