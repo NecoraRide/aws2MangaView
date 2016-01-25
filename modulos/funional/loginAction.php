@@ -23,5 +23,5 @@
     //cerramos el fichero
     fclose($fichero);
     //redireccionamos inicie sesión o no
-    //header('Location: ../index.php');
+    header('Location: ../../index.php');
 ?>
