@@ -6,7 +6,7 @@
 */
 #footer{
     bottom: 0;
-    position: absolute;
+    position: relative;
     width: 97.6%;
     text-align: center;
     border-radius: 5px;
