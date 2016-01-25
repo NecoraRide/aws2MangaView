@@ -1,25 +1,27 @@
 <?php
-    //funcion de descompresion
-    function foo($nombreZip){
-        $zip = new ZipArchive;
-        if ($zip->open($nombreZip) === TRUE) {
-            $zip->extractTo('../../Mangas/temp/'+$nombreZip);
-            $zip->close();
-            echo 'ok';
-        } else {
-            echo 'failed';
-        }
-    }
-    if (is_uploaded_file($HTTP_POST_FILES['archivo']['tmp_name'])) {
-      copy($HTTP_POST_FILES['archivo']['tmp_name'], $HTTP_POST_FILES['archivo']['name']);
-      $subio = true;
+    $uploadedfileload="true";
+    $uploadedfile_size=$_FILES['uploadedfile']['size'];
+    $msg = "";
+    echo "Fichero: ".$_FILES['uploadedfile']['name']."<br>";
+    if ($_FILES['uploadedfile']['size']>1500000000)
+        {$msg=$msg."El archivo es mayor que 1,5GB, debes reduzcirlo antes de subirlo<BR>";
+        $uploadedfileload="false";}
+
+    if (!($_FILES['uploadedfile']['type'] =="application/x-zip-compressed")){
+        $msg=$msg."El fichero no es del tipo correcto, solo se admiten subidas de ficheros .zip";
+        $uploadedfileload="false";
     }
 
-    if($subio) {
-        echo "El archivo subio con exito";
-    } else {
-        echo "El archivo no cumple con las reglas establecidas";
-    }
-die();
+        $file_name=$_FILES['uploadedfile']['name'];
+        $add="../../Mangas/tmp/$file_name";
 
+    if($uploadedfileload=="true"){
+        if(move_uploaded_file ($_FILES['uploadedfile']['tmp_name'], $add)){
+            echo " Ha sido subido satisfactoriamente";
+    }else{
+        echo "Error al subir el archivo";}
+
+    }else{
+        echo $msg;
+    }
 ?>

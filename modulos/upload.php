@@ -1,6 +1,10 @@
-<form action="funional/subirArchivo.php" method="post" enctype="multipart/form-data" name="form1">
-  <p align="center">Archivo
-   <input name="archivo" type="file" id="archivo">
-  </p>
-  <p align="center"><input name="boton" type="submit" id="boton" value="Enviar"></p>
-</form>
+<?php
+    if(!(isset($_SESSION["nombre"]))){
+        echo '<p>Es necesario iniciar sesión para acceder a la subida de archivos.';
+    }else{
+        echo '<form enctype="multipart/form-data" action="funional/subirArchivo.php" method="POST">';
+        echo '<input name="uploadedfile" type="file" />';
+        echo '<input type="submit" value="Subir archivo" />';
+        echo '</form>';
+    }
+?>
