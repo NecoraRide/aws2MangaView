@@ -2,7 +2,6 @@
     $uploadedfileload="true";
     $uploadedfile_size=$_FILES['uploadedfile']['size'];
     $msg = "";
-    echo "Fichero: ".$_FILES['uploadedfile']['name']."<br>";
     if ($_FILES['uploadedfile']['size']>1500000000)
         {$msg=$msg."El archivo es mayor que 1,5GB, debes reduzcirlo antes de subirlo<BR>";
         $uploadedfileload="false";}
@@ -24,4 +23,14 @@
     }else{
         echo $msg;
     }
+
+    /*DESCOMPRESION
+    $zip = new ZipArchive;
+    if ($zip->open('./../Mangas/tmp/'.$_FILES['uploadedfile']["name"]) === TRUE) {
+        $zip->extractTo('/my/destination/dir/');
+        $zip->close();
+        echo 'ok';
+    } else {
+        echo 'failed';
+    }*/
 ?>
