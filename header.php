@@ -4,11 +4,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<!-- LOGIN
-			<script src="js/auth.js"></script>
-		-->
-
-		<title>Home</title>
+		<title><?php echo 'Home'; ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png">

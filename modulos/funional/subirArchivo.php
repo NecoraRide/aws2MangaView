@@ -12,7 +12,7 @@
     }
 
         $file_name=$_FILES['uploadedfile']['name'];
-        $add="../../Mangas/tmp/$file_name";
+        $add="../../Mangas/tmp/".$file_name;
 
     if($uploadedfileload=="true"){
         if(move_uploaded_file ($_FILES['uploadedfile']['tmp_name'], $add)){
@@ -24,13 +24,14 @@
         echo $msg;
     }
 
-    /*DESCOMPRESION
+    /*DESCOMPRESION*/
     $zip = new ZipArchive;
-    if ($zip->open('./../Mangas/tmp/'.$_FILES['uploadedfile']["name"]) === TRUE) {
-        $zip->extractTo('/my/destination/dir/');
+    $res = $zip->open('../../Mangas/tmp/'.$_FILES['uploadedfile']["name"]);
+    if ($res === TRUE) {
+        $zip->extractTo('../../Mangas/'.$_FILES['uploadedfile']["name"]);
         $zip->close();
-        echo 'ok';
-    } else {
-        echo 'failed';
-    }*/
+    }
+
+    /*BORRAMOS ZIP*/
+    unlink('../../Mangas/tmp/'.$_FILES['uploadedfile']["name"]);
 ?>
