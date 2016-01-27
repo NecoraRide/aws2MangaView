@@ -7,12 +7,16 @@
                 case 'assassination_classroom':
                     manga = 'Assassination Classroom';
                     break;
-
-
+                case 'death_note':
+                    manga = 'Death Note';
+                    break;
+                case 'high_school_of_the_dead':
+                    manga = 'High School Of The Dead';
+                    break;
             }
-            if(x[1] == ){
-                jQuery('#nombreManga').html('Assassination Classroom');
-            }
+
+            jQuery('#nombreManga').html(manga);
+
 
         });
     </script>
