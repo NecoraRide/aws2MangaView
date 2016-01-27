@@ -2,7 +2,18 @@
     <script>
         jQuery(document).ready(function(){
             var x = window.location.href.split('=');
-            jQuery('#nombreManga').html(x);
+            var manga;
+            switch(x[1]){
+                case 'assassination_classroom':
+                    manga = 'Assassination Classroom';
+                    break;
+
+
+            }
+            if(x[1] == ){
+                jQuery('#nombreManga').html('Assassination Classroom');
+            }
+
         });
     </script>
 

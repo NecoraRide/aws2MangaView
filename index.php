@@ -9,13 +9,13 @@
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                          <img class="carrousel" src="Mangas/Assassination_Classroom/portada.jpg" alt="Assassination Classroom" onclick="location.href='list.php?id=(this.value)';">
+                          <img class="carrousel" src="Mangas/Assassination_Classroom/portada.jpg" alt="Assassination Classroom" onclick="location.href='list.php?id=assassination_classroom';">
                         </div>
                         <div class="item">
-                          <img class="carrousel" src="Mangas/Death_Note/portada.jpg" value="death_note" alt="Death Note" onclick="location.href='list.php?id=(this.value)';">
+                          <img class="carrousel" src="Mangas/Death_Note/portada.jpg" value="death_note" alt="Death Note" onclick="location.href='list.php?id=death_note';">
                         </div>
                         <div class="item">
-                          <img class="carrousel" src="Mangas/test.png" alt="test" onclick="mostrarTomos(this.value);">
+                          <img class="carrousel" src="Mangas/High_School_Of_The_Dead/portada.jpg" alt="High School Of The Dead" onclick="location.href='list.php?id=high_school_of_the_dead';">
                         </div>
                       </div>
 
