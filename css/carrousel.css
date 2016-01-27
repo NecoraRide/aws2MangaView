@@ -25,3 +25,5 @@
   filter: alpha(opacity=90);
 }
 img.carrousel{width: 80%; height: 400px;margin: auto;}
+.iconleft{background-image: url(../img/FlechaIz.png);}
+.iconright{background-image: url(../img/FlechaIz.png);}
