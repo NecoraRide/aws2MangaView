@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="espaciadoTop"></div>
-                <h1>ULTIMOS MANGAS A&Ntilde;ADIDOS</h1>
+                <h1>MANGAS</h1>
                 <div class="zonaMangas">
                         <?php
                             $fichero = fopen("./modulos/ficheros/mangas.txt","r");
