@@ -1,5 +1,6 @@
 <?php
-    if(!(isset($_SESSION["nombre"]))){
+    session_start();
+    if(!(isset($_SESSION["usuario"]))){
         echo '<p>Es necesario iniciar sesión para acceder a la subida de archivos.';
     }else{
         echo '<form enctype="multipart/form-data" action="funional/subirArchivo.php" method="POST">';

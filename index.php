@@ -24,7 +24,7 @@
                         <span class="iconleft"></span>
                       </a>
                       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="inconright"></span>
+                        <span class="iconright"></span>
                       </a>
                     </div>
                     <!-- <?php // for($i=0;$i<5;$i++) :?>
