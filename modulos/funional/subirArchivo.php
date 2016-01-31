@@ -30,8 +30,18 @@
     if ($res === TRUE) {
         $zip->extractTo('../../Mangas/'.$_FILES['uploadedfile']["name"]);
         $zip->close();
+        /*BORRAMOS ZIP*/
+        unlink('../../Mangas/tmp/'.$_FILES['uploadedfile']["name"]);
+        ?>
+            <script>
+                location.href='../../upload.php?id=ok';
+            </script>
+        <?php
+    }else{
+        ?>
+            <script>
+                location.href='../../upload.php?id=ko';
+            </script>
+        <?php
     }
-
-    /*BORRAMOS ZIP*/
-    unlink('../../Mangas/tmp/'.$_FILES['uploadedfile']["name"]);
 ?>
