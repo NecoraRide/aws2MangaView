@@ -20,15 +20,15 @@
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
             <div data-p="150.00" style="display: none;">
-                <img data-u="image" src="Mangas/Assassination_Classroom/portada.jpg" />
+                <img data-u="image" src="Mangas/Assassination_Classroom/portada.jpg" onclick="location.href='list.php?id=assassination_classroom'" />
                 <img data-u="thumb" src="Mangas/Assassination_Classroom/portada.jpg" />
             </div>
             <div data-p="150.00" style="display: none;">
-                <img data-u="image" src="Mangas/Death_Note/portada.jpg" />
+                <img data-u="image" src="Mangas/Death_Note/portada.jpg" onclick="location.href='list.php?id=death_note'"/>
                 <img data-u="thumb" src="Mangas/Death_Note/portada.jpg" />
             </div>
             <div data-p="150.00" style="display: none;">
-                <img data-u="image" src="Mangas/High_School_Of_The_Dead/portada.jpg">
+                <img data-u="image" src="Mangas/High_School_Of_The_Dead/portada.jpg" onclick="location.href='list.php?id=high_school_of_the_dead';">
                 <img data-u="thumb" src="Mangas/High_School_Of_The_Dead/portada.jpg" />
             </div>
 
