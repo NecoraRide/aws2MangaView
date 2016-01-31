@@ -9,7 +9,7 @@
             $r = explode('/', $r);
             $r = array_filter($r);
             $r = array_merge($r, array());
-            $endofurl = $r[2];
+            $endofurl = array_pop($r);
         ?>
 		<title><?php echo 'Home'; ?></title>
 		<meta charset="utf-8" />
