@@ -4,14 +4,7 @@
 *				-> Alex Serret Aranda
 *	18/01/2016
 */
-#footer{
-    bottom: 0;
-    position: relative;
-    width: 97.6%;
-    text-align: center;
-    border-radius: 5px;
 
-}
 
 body, html{
 	/*background-color: #79AA37;*/
@@ -57,15 +50,6 @@ body, html{
 	max-width: 11em;
 }
 
-.footerMod{
-	float: bottom;
-	margin-top: 200px;
-	background-color: #313131;
-	width: 100%;
-	color: white;
-	display: table-row;
-}
-
 .textFooter{
 	margin-left: -70%;
 }
@@ -75,3 +59,59 @@ body, html{
 .navbar-nameless a{color:#fff!important}
 .navbar-nameless .navbar-nav>.active>a,.navbar-nameless .navbar-nav>.active>a:hover,.navbar-nameless .navbar-nav>.active>a:focus{color:#fff!important;font-weight:700!important;background-color:#2957ba!important}
 .navbar-nameless .navbar-nav>.active>a.adulto,.navbar-nameless .navbar-nav>.active>a.adulto :hover,.navbar-nameless .navbar-nav>.active>a.adulto :focus{background-color:#BA2929!important}
+
+
+.error{
+	border-style: solid;
+	border-color: darkred;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 0px 1px 3px;
+	border-radius: 7px 7px 8px 8px;
+	background-color: #b30000;
+	padding-left: 7px;
+	padding-right: 7px;
+    font-weight: bold;
+    padding-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.success{
+	border-style: solid;
+	border-color: darkgreen;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 0px 1px 3px;
+	border-radius: 7px 7px 8px 8px;
+	background-color: #008000;
+	padding-left: 7px;
+	padding-right: 7px;
+    font-weight: bold;
+    padding-top: 1.5%;
+    margin-bottom: 3%;
+}
+
+.subirmanga{
+    border-radius: 17px 17px 17px 17px;
+	-moz-border-radius: 17px 17px 17px 17px;
+	-webkit-border-radius: 17px 17px 17px 17px;
+	border: 0px solid #000000;
+	background-color: white;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.botonEnviarManga{
+    margin-left: 2%;
+}

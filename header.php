@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/font-awesome.css" />
         <link rel="stylesheet" href="css/carrousel.css" />
-        <link rel="stylesheet" href="css/secondCSS.css" />
+        <link rel="stylesheet" href="css/sticky-footer.css" />
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 	</head>
@@ -28,7 +28,6 @@
 	<div class="navbar navbar-default navbar-fixed-top navbar-nameless" role="navigation">
 		<div class="col-lg-6 col-md-6 col-sm-7">
 			<ul class="menu nav navbar-nav">
-                <script>console.log('<?php echo $endofurl; ?>');</script>
 				<li class="<?php if($endofurl == 'index.php' || $endofurl == 'aws2MangaView') echo 'current active'?>"><a href="index.php" title="Visor de mangas">Home</a></li>
 				<li class="<?php if($endofurl == 'mangas.php' || $endofurl == 'list.php') echo 'current active'?>"><a href="mangas.php" title="Mangas">Mangas</a></li>
 				<li class="<?php if($endofurl == 'upload.php' || $endofurl == 'upload.php?subida=error' || $endofurl == 'upload.php?subida=success') echo 'current active'?>"><a href="upload.php" title="Subir Manga">Upload</a></li>

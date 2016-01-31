@@ -1,6 +1,6 @@
 
-        <div id="footer" >
+        <footer class="footer" id="footer">
             <div class="container">&copy; Juan Carlos Lopez Puig, Alex Serret Aranda, Cristian Fernandez Plaza</div>
-        </div>
+        </footer>
     </body>
 </html>
