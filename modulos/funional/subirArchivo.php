@@ -34,13 +34,13 @@
         unlink('../../Mangas/tmp/'.$_FILES['uploadedfile']["name"]);
         ?>
             <script>
-                location.href='../../upload.php?id=ok';
+                location.href='../../upload.php?subida=success';
             </script>
         <?php
     }else{
         ?>
             <script>
-                location.href='../../upload.php?id=ko';
+                location.href='../../upload.php?subida=error';
             </script>
         <?php
     }
