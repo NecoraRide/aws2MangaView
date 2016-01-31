@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="espaciadoTop"></div>
-                <h1>SUBIR MANGAS</h1>
+                <h1 class="titulo">SUBIR MANGAS</h1>
                 <div class="subirmanga" style="backgroundColor: white;">
                     <?php
                         if($endofurl == 'upload.php?subida=error'){
