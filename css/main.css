@@ -14,7 +14,11 @@
 }
 
 body, html{
-	background-color: #79AA37;
+	/*background-color: #79AA37;*/
+    background-image: url('../img/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 	height: 100%;
 	width: 100%;
 	text-align: center;
