@@ -4,6 +4,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+        <?php
+            $r = $_SERVER['REQUEST_URI'];
+            $r = explode('/', $r);
+            $r = array_filter($r);
+            $r = array_merge($r, array());
+            $endofurl = $r[2];
+        ?>
 		<title><?php echo 'Home'; ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -12,6 +19,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/font-awesome.css" />
         <link rel="stylesheet" href="css/carrousel.css" />
+        <link rel="stylesheet" href="css/footer.css" />
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 	</head>
@@ -20,10 +28,9 @@
 	<div class="navbar navbar-default navbar-fixed-top navbar-nameless" role="navigation">
 		<div class="col-lg-6 col-md-6 col-sm-7">
 			<ul class="menu nav navbar-nav">
-				<li class="current active"><a href="index.php" title="Visor de mangas">Home</a></li>
-				<li class=""><a href="mangas.php" title="Mangas">Mangas</a></li>
-				<li class=""><a href="top.php" title="Tops mangas">Top</a></li>
-				<li class=""><a href="modulos/upload.php" title="Subir Manga">Upload</a></li>
+				<li class="<?php if($endofurl == 'index.php') echo 'current active'?>"><a href="index.php" title="Visor de mangas">Home</a></li>
+				<li class="<?php if($endofurl == 'mangas.php') echo 'current active'?>"><a href="mangas.php" title="Mangas">Mangas</a></li>
+				<li class="<?php if($endofurl == 'upload.php') echo 'current active'?>"><a href="upload.php" title="Subir Manga">Upload</a></li>
 			</ul>
             <?php
                 if(!(isset($_SESSION["usuario"]))){
