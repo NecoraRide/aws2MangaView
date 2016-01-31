@@ -24,7 +24,7 @@
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
-img.carrousel{width: 80%; height: 400px;margin: auto; cursor:pointer;}
+img.carrousel{width: 80%; height: 400px;margin: auto; cursor:pointer;border-radius: 5px;}
 a.left{
     background-image: url(../img/FlechaIzq.png);
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ a.right{
             height: 62px;
             border: #000 2px solid;
             box-sizing: content-box;
-            background: url('img/t01.png') -800px -800px no-repeat;
+            background: url('../img/t01.png') -800px -800px no-repeat;
             _background: none;
         }
 
