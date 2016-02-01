@@ -55,7 +55,7 @@ Readme
 	    * subirArchivo -> CORE lógico de la subida de ficheros
   * footer.php -> Footer de la web, importado siempre como include_once().
   * header.php -> Header de la web, importado siempre como include_once, contiene el menú superior de la web y funcionalidades genéricas utilizadas en todas las planas.
-	* index.php -> Página principal. 
-	* list.php -> Muestra todas las iamgenes de un manga
-	* mangas.php -> Listado de todos los mangas
-	* upload.php -> Subida de fichero zip
+  * index.php -> Página principal. 
+  * list.php -> Muestra todas las iamgenes de un manga
+  * mangas.php -> Listado de todos los mangas
+  * upload.php -> Subida de fichero zip
