@@ -21,7 +21,7 @@
                 <h1>TOMOS <?php echo $mangaTarget; ?></h1>
                 <?php
                     $dir = opendir('./Mangas/'.$manga);
-                    while ($elemento = readdir($dir)):
+                    while ($elemento == readdir($dir)):
                         if( $elemento != "." && $elemento != ".." && $elemento != 'portada.jpg'):?>
                         <?php
                             if($p < 9){
