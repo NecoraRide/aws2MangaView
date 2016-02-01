@@ -1,5 +1,8 @@
 <?php include('header.php') ?>
     <?php
+        $p = 0;
+        $control = 0;
+        $numero = "";
         $r = $_SERVER['REQUEST_URI'];
         $r = explode('=', $r);
         $r = array_filter($r);
@@ -20,9 +23,20 @@
                     $dir = opendir('./Mangas/'.$manga);
                     while ($elemento = readdir($dir)):
                         if( $elemento != "." && $elemento != ".." && $elemento != 'portada.jpg'):?>
-
+                        <?php
+                            if($p < 9){
+                                $p++;
+                                $numero = ''.$control.$p;
+                            }
+                            else {
+                                $p = 0;
+                                $control++;
+                                $numero = ''.$control.$p;
+                            }
+                        ?>
                                 <div class="col-md-4">
-                                    <img src="Mangas/<?php echo $mangaTarget;?>/portada.jpg" alt="<?php echo $mangaTarget;?>" style="width:5%, height:40px;">
+                                    <img class="imagen" src="Mangas/<?php echo $mangaTarget;?>/Tomo <?php echo $numero ?>/tapa.jpg"
+                                         alt="<?php echo $mangaTarget;?>" style="width:5%, height:40px;">
                                     <?php echo $elemento;?>
                                 </div>
                         <?php
